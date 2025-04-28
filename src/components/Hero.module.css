@@ -2,7 +2,7 @@
     position: relative;
     background:linear-gradient(135deg, #2a1a3d 0%, #4b2e6f 100%);
     color: white;
-    padding: 60px 20px;
+    padding: 140px 0px 0px;
     text-align: center;
     overflow: hidden;
   }
@@ -30,6 +30,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
   }
   
   .title {

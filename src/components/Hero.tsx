@@ -7,12 +7,9 @@ const Hero = () => {
     <section className={styles.hero}>
     <div className={styles.waveBackground}>
       <div className={styles.content}>
-        <h1 className={styles.title}>A Strategic Niche Marketing System for Financial Advisors</h1>
-        <p className={styles.subtitle}>Stop Relying on Referrals Alone</p>
-        <button className={styles.button}>Schedule a Call</button>
-        <div className={styles.imagePlaceholder}>
-          <Image src={im} width={200} height={200} alt="Financial Advisor" className={styles.heroImage} />
-        </div>
+        <h1 className={styles.title}>Accelerate Your DevOps Journey</h1>
+        <p className={styles.subtitle}>Streamline development, automate delivery, and scale operations with expert DevOps consulting. Build faster, safer, and smarter. </p>
+        <button className={styles.button}>Let's build</button>  
       </div>
     </div>
   </section>

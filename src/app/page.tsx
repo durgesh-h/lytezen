@@ -3,6 +3,9 @@ import Hero from '../components/Hero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DevOpsConsulting from '@/components/DevOpsConsulting';
+import CoreServices from '@/components/CoreServices';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import FreeBook from '@/components/FreeBook';
 
 export default function Home() {
   return (
@@ -11,9 +14,12 @@ export default function Home() {
       <main>
         <Hero />
         <DevOpsConsulting />
+        <CoreServices/>
+        <WhyChooseUs/>
+      <Footer/>
+
         {/* Add other sections here as needed */}
       </main>
-      <Footer/>
     </div>
   );
 }
