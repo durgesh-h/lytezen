@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -14,26 +15,32 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-10">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="text-base font-medium hover:text-[#a9a1e1] transition-colors duration-200"
           >
-            How It Works
+            Home
+          </Link>
+          <a
+            href="/about"
+            className="text-base font-medium hover:text-[#a9a1e1] transition-colors duration-200"
+          >
+            About Us
           </a>
           <a
-            href="#"
+            href="/contact"
             className="text-base font-medium hover:text-[#a9a1e1] transition-colors duration-200"
           >
-            About
+            Contact Us
           </a>
           <a
-            href="#"
+            href="/usecases"
             className="text-base font-medium hover:text-[#a9a1e1] transition-colors duration-200"
           >
-            Resources
+            Use Cases
           </a>
           <button className="ml-4 bg-[#a9a1e1] text-[#2a1a3d] px-5 py-2 rounded-full font-semibold hover:bg-[#7e69c0] transition-all duration-200 shadow hover:shadow-lg">
-            Log In
+            Let's build
           </button>
         </nav>
 
@@ -62,9 +69,8 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-[#2a1a3d] bg-opacity-95 backdrop-blur-md flex flex-col items-center justify-center space-y-8 transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-[#2a1a3d] bg-opacity-95 backdrop-blur-md flex flex-col items-center justify-center space-y-8 transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden`}
       >
         {/* Close Button */}
         <button
@@ -85,33 +91,39 @@ const Header = () => {
             />
           </svg>
         </button>
-
-        <a
-          href="#"
+        <Link
+          href="/"
           className="text-2xl font-semibold hover:text-[#a9a1e1] transition-colors duration-200"
           onClick={() => setIsOpen(false)}
         >
-          How It Works
+          Home
+        </Link>
+        <a
+          href="/about"
+          className="text-2xl font-semibold hover:text-[#a9a1e1] transition-colors duration-200"
+          onClick={() => setIsOpen(false)}
+        >
+          About Us
         </a>
         <a
-          href="#"
+          href="/contact"
           className="text-2xl font-semibold hover:text-[#a9a1e1] transition-colors duration-200"
           onClick={() => setIsOpen(false)}
         >
-          About
+          Contact Us
         </a>
         <a
-          href="#"
+          href="/usecases"
           className="text-2xl font-semibold hover:text-[#a9a1e1] transition-colors duration-200"
           onClick={() => setIsOpen(false)}
         >
-          Resources
+          Use Cases
         </a>
         <button
           onClick={() => setIsOpen(false)}
           className="mt-4 bg-[#a9a1e1] text-[#2a1a3d] px-6 py-2 rounded-full font-semibold hover:bg-[#7e69c0] transition-all duration-200 shadow hover:shadow-lg"
         >
-          Log In
+          Let's build
         </button>
       </div>
     </header>
